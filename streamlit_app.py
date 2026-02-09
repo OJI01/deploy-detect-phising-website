@@ -1,3 +1,5 @@
+!pip install streamlit
+
 import streamlit as st
 import pandas as pd
 import joblib
@@ -48,4 +50,5 @@ if st.button("Analisis Website Sekarang", type="primary"):
         st.write(f"Tingkat Keyakinan: {probability[1]*100:.2f}%")
     else:
         st.error(f"### HASIL: TERDETEKSI PHISHING!")
+
         st.write(f"Tingkat Keyakinan: {probability[0]*100:.2f}%")
