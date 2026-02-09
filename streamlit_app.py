@@ -1,4 +1,4 @@
-!pip install streamlit
+pip install streamlit
 
 import streamlit as st
 import pandas as pd
@@ -52,3 +52,4 @@ if st.button("Analisis Website Sekarang", type="primary"):
         st.error(f"### HASIL: TERDETEKSI PHISHING!")
 
         st.write(f"Tingkat Keyakinan: {probability[0]*100:.2f}%")
+
